@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/MainNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="X"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View style="@style/thickHorizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <View style="@style/thickVerticalLine" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/column" />
+
+            <View style="@style/thinVerticalLine" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/column" />
+
+            <View style="@style/thinVerticalLine" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/column" />
+
+            <View style="@style/thickVerticalLine" />
+
+        </LinearLayout>
+
+        <View style="@style/thinHorizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <View style="@style/thickVerticalLine" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/column" />
+
+            <View style="@style/thinVerticalLine" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/column" />
+
+            <View style="@style/thinVerticalLine" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/column" />
+
+            <View style="@style/thickVerticalLine" />
+
+        </LinearLayout>
+
+        <View style="@style/thinHorizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <View style="@style/thickVerticalLine" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/column" />
+
+            <View style="@style/thinVerticalLine" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/column" />
+
+            <View style="@style/thinVerticalLine" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/column" />
+
+            <View style="@style/thickVerticalLine" />
+
+        </LinearLayout>
+
+        <View style="@style/thickHorizontalLine" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
